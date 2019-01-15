@@ -32,9 +32,13 @@
                                 <div class="col-12">
                                     <h5 class="list-group-item">{{$listing->address}}</h5>
                                 </div>
+                                <div>
+                                <a class="btn btn-light"  href="/listings/{{$listing->id}}/edit ">Edit</a>
+                                </div>
                             </div>
                                 @endforeach
                         </div>
+
                     @endif
                 </div>
             </div>
