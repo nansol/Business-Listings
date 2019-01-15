@@ -7,7 +7,7 @@
             <div class="card">
                 <div class="card-header"><h4>Add Contact</h4></div>
                 <div class="card-body">
-                    <form action="{{action('ListingsController@update')}}" method="POST">
+                    <form action="{{action('ListingsController@update', [$listing->id])}}" method="PUT">
                          <?= csrf_field() ?>
 
                         <div class="form-group">
