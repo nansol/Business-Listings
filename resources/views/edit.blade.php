@@ -5,10 +5,17 @@
 <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h4>Add Contact</h4></div>
+                    <div class="row">
+
+                    <div class="card-header col-10 align-self-start"><h4>Edit Contact</h4></div>
+                    <div class="card-header  col-2 align-self-end"><a href="/dashboard" class="btn btn-light btn-sm">Back</a></div>
+            </div>
+
+
                 <div class="card-body">
-                    <form action="{{action('ListingsController@update', [$listing->id])}}" method="PUT">
+                    <form action="{{action('ListingsController@update', [$listing->id])}}" method="POST">
                          <?= csrf_field() ?>
+                         @method("PUT")
 
                         <div class="form-group">
                             <label for="name">Name</label>

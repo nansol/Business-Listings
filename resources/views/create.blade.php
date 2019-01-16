@@ -5,7 +5,10 @@
 <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h4>Add Contact</h4></div>
+                    <div class="row">
+                            <div class="card-header col-10 align-self-start"><h4>Add Contact</h4></div>
+                            <div class="card-header col-2 align-self-end"><a href="/dashboard" class="align-self-end btn btn-light btn-sm">Back</a></div>
+                    </div>
                 <div class="card-body">
                     <form action="{{action('ListingsController@store')}}" method="POST">
                          <?= csrf_field() ?>
